@@ -433,5 +433,61 @@
 
 // ------------------------------------------------------------------
 
+// // Lisa's Workbook
 
+// function workbook(n, k, arr) {
+//   let count = 0
+//     let page = 0
+//     for (let i = 0; i < n; i++){
+//         for (let j = 1; j <= arr[i]; j++){
+//             if (k==1||j % k == 1) {
+//                 page++;
+//             }
+//             if (j == page) {
+//                 count++;
+//             }
+//         }
+//     }
+//     return count;
+// }
+
+// workbook(5, 3, [4, 2, 6, 1, 10]);
+
+// ------------------------------------------------------------------
+
+// // Save the Prisoner
+
+// function saveThePrisoner(n, m, s) {
+//     return (m-1 + s)%n || n;
+// }
+
+// saveThePrisoner(5,2,1);
+// saveThePrisoner(5,2,2);
+
+// ------------------------------------------------------------------
+
+// Equalize the Array
+
+// function equalizeArray(arr) {
+//   var newAr = arr.filter( item =>
+//     item != arr[0]
+//   )
+//   newAr.push(arr[0]);
+//   var count = 0;
+//   var countAr = [];
+//   for(let i=0;i<newAr.length;i++){
+//     for(let j=0;j<arr.length;j++){
+//       if(newAr[i] == arr[j]){
+//         count++;
+//       }
+//     }
+//     countAr.push(count);
+//     count = 0;
+//   }
+//   return Math.min(...(countAr.map((item)=> Math.abs(arr.length - item))));
+// }
+
+// equalizeArray([3, 3, 2, 1, 3]);
+
+// -------------------------------------------------------------------
 
